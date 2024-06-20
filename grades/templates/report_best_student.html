@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Best Student</title>
+</head>
+<body>
+    <h1>Best Student</h1>
+    {% if best_student %}
+        <p>The best student is {{ best_student.name }} with an average grade of {{ best_student.average_grade }}.</p>
+    {% else %}
+        <p>No students found.</p>
+    {% endif %}
+    <a href="{% url 'index' %}">Back to home</a>
+</body>
+</html>

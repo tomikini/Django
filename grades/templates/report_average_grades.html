@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Average Grades</title>
+</head>
+<body>
+    <h1>Average Grades</h1>
+    <h2>By Student</h2>
+    <ul>
+        {% for student in students %}
+        <li>{{ student.name }}: {{ student.average_grade }}</li>
+        {% endfor %}
+    </ul>
+    <h2>By Course</h2>
+    <ul>
+        {% for course in courses %}
+        <li>{{ course.name }}: {{ course.average_grade }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'index' %}">Back to home</a>
+</body>
+</html>

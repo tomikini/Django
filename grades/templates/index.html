@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade System</title>
+</head>
+<body>
+    <h1>Grade System</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'student_list' %}">Students</a></li>
+            <li><a href="{% url 'course_list' %}">Courses</a></li>
+            <li><a href="{% url 'grade_list' %}">Grades</a></li>
+            <li><a href="{% url 'report_best_student' %}">Best Student</a></li>
+            <li><a href="{% url 'report_worst_student' %}">Worst Student</a></li>
+            <li><a href="{% url 'report_average_grades' %}">Average Grades</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

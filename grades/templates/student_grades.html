@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ student.name }}'s Grades</title>
+</head>
+<body>
+    <h1>Grades for {{ student.name }}</h1>
+    <ul>
+        {% for grade in grades %}
+        <li>{{ grade.course.name }}: {{ grade.grade }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'index' %}">Back to home</a>
+</body>
+</html>
